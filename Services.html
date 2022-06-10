@@ -1,0 +1,146 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Smile - Services</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        section{
+          padding: 40px 15;
+        }
+    </style>
+    
+
+    
+    <!-- /* CSS */ -->
+    <style>
+    /* Style the buttons that are used to open and close the accordion panel */
+    .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    }
+
+    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+    /* .active, .accordion:hover { */
+    /* background-color: #ccc; */
+    /* } */
+
+    /* Style the accordion panel. Note: hidden by default */
+    .panel {
+    padding: 0 18px;
+     background-color: white;
+    display: none;
+    overflow: hidden;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Happy Smile</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Our Team <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Services <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Contact Us <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Book online <span class="sr-only">(current)</span></a>
+            </li>            
+          </ul>
+        </div>
+    </nav>
+
+    <!-- main image & intro text -->
+   <section id="ourTeam">
+    <div class="container-lg">
+        <h1>
+        <div class=" row g-4 display-7 justify-content-center align-items-center"> We offer the following services </div>
+        </h1>
+    </div>
+
+    <!-- Accordion -->
+    <!-- HTML -->
+    <button class="accordion">Simple Consultation </button>
+    <div class="panel">
+    <p> You simply show up, get your teeth examined and cleaned up, have a quick chat about how your dental health has been, and finish up by booking your next visit.</p>
+    <p>Price: 30 CAD </p>
+    </div>
+
+    <button class="accordion">General Check-up For Adults</button>
+    <div class="panel">
+    <p>The hygienist cleans and polishes your teeth, talks to you about caring for your teeth and answers your questions. The dentist reviews the cleaning done by the hygienist, conducts an oral exam of your gums and teeth, diagnoses any oral health problems, orders X-rays (if appropriate) and make treatment recommendations.</p>
+    <p>Price: 40 CAD </p>    
+    </div>
+
+    <button class="accordion">Root Canal Treatment</button>
+    <div class="panel">
+    <p>Root canal treatment is designed to eliminate bacteria from the infected root canal, prevent reinfection of the tooth and save the natural tooth. When one. undergoes a root canal, the inflamed or infected pulp is removed and the. inside of the tooth is carefully cleaned and disinfected, then filled and sealed.</p>
+    <p>Price: 140 CAD </p>    
+    </div>
+
+    <button class="accordion">Sedation Dentistry</button>
+    <div class="panel">
+    <p>Sedation dentistry uses medication to help patients relax during dental procedures. It's sometimes referred to as "sleep dentistry," although that's not entirely accurate. Patients are usually awake with the exception of those who are under general anesthesia.</p>
+    <p>Price: 500 CAD </p>    
+    </div>
+
+    <button class="accordion">Kids Dentistry</button>
+    <div class="panel">
+    <p>​Pediatric dentists are dedicated to the oral health of children from infancy through the teen years. They have the experience and qualifications to care for a child's teeth, gums, and mouth throughout the various stages of childhood.</p>
+    <p>Price: 100 CAD </p>    
+    </div>
+
+    <button class="accordion">Implant Dentistry</button>
+    <div class="panel">
+    <p>A dental implant is a metal post that replaces the root portion of a missing tooth. An artificial tooth (crown) is placed on an extension of the post (abutment) on the dental implant, giving you the look of a real tooth.</p>
+    <p>Price: 340 CAD </p>    
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+    
+
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+
+
+</html>
